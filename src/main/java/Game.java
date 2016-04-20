@@ -29,7 +29,7 @@ public class Game {
     String playerOnePlay = playerOneInput.toLowerCase();
 
     if(checkIfWinnerOrTie(playerOnePlay, computerChoice)) {
-      result = parseWinner(playerOnePlay, computerChoice);
+      result = parseCPUWinner(playerOnePlay, computerChoice);
     } else if (!checkIfWinnerOrTie(playerOnePlay, computerChoice)) {
       result = "this round is a tie";
     }
@@ -37,6 +37,28 @@ public class Game {
     System.out.println(playerOnePlay);
     System.out.println(result);
     return result;
+  }
+
+  public static String parseCPUWinner(String playerOneInput, String computerInput) {
+    HashMap<String, String> playType = new HashMap<String, String>();
+    playType.put("rock", "scissors");
+    playType.put("paper", "rock");
+    playType.put("scissors", "paper");
+
+    String playerOne = playType.get(playerOneInput);
+    String computerPlay = playType.get(computerInput);
+    String getWinner = "";
+
+    String playerOneWinner = String.format("human played: %s, computer played: %s, You Win!", playerOneInput, computerInput);
+    String computerWinner =  String.format("human played: %s, computer played: %s A computer beat you, how does that feel?", playerOneInput, computerInput);
+    if (playerOne.equals(computerInput)) {
+      getWinner = playerOneWinner;
+    } else if (computerPlay.equals(playerOneInput)) {
+      getWinner = computerWinner;
+    } else {};
+    return getWinner;
+
+
   }
 
   public static String parseWinner(String playerOneInput, String playerTwoInput) {

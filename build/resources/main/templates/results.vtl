@@ -1,12 +1,13 @@
 <h1>Let's Play Rock, Paper, Scissors</h1>
 
-<h3>$results</h3>
+
 
 
 <br><br>
 #if($player2)
 <div class="two-player">
 <h3>2p Game</h3>
+<h3>$results</h3>
 <p>Player 1 chose $player1.</p>
 <p>Player 2 chose $player2.</p>
 </div>
@@ -14,9 +15,7 @@
 
 #if($humanPlayer)
 <div class="ai-game">
-<h3>CPU Game</h3>
-<p>Human Player chose $humanPlayer.</p>
-<p>Human player is player one.</p>
-<p>CPU is player two.</p>
+  <h3>CPU Game</h3>
+  <h3>$results</h3>
 </div>
 #end
