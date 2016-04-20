@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="GameTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2016-04-20T20:52:40" hostname="epicodus-117.local" time="0.002">
+<testsuite name="GameTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2016-04-20T22:35:25" hostname="epicodus-117.local" time="0.002">
   <properties/>
-  <testcase name="GameTest_ComputerPlays" classname="GameTest" time="0.001"/>
-  <testcase name="GameTest_shouldRunGameRoundsForTwoPlayers_CheckForTie_String" classname="GameTest" time="0.0"/>
+  <testcase name="GameTest_ComputerPlays" classname="GameTest" time="0.0"/>
+  <testcase name="GameTest_shouldRunGameRoundsForTwoPlayers_CheckForTie_String" classname="GameTest" time="0.001"/>
   <testcase name="GameTest_shouldHaveComputer" classname="GameTest" time="0.0"/>
   <testcase name="GameTest_shouldRunGameRoundsForTwoPlayers_String" classname="GameTest" time="0.0"/>
   <testcase name="GameTest_shouldHandleLowerAndUppercase_String" classname="GameTest" time="0.0"/>
   <testcase name="GameTest_shouldCheckPlayType" classname="GameTest" time="0.0"/>
   <testcase name="GameTest_shouldCheckIfAWinnerExists_true" classname="GameTest" time="0.0"/>
-  <testcase name="GameTest_shouldCheckPlayTypePlayerTwo" classname="GameTest" time="0.001"/>
+  <testcase name="GameTest_shouldCheckPlayTypePlayerTwo" classname="GameTest" time="0.0"/>
   <system-out><![CDATA[paper
-Player One Wins
+human played: paper, computer played: rock, You Win!
 paper
 this round is a tie
 paper
