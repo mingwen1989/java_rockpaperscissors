@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="GameTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2016-04-20T16:20:38" hostname="epicodus-117.local" time="0.001">
+  <properties/>
+  <testcase name="GameTest_shouldCheckPlayType" classname="GameTest" time="0.001"/>
+  <testcase name="GameTest_shouldCheckIfAWinnerExists_true" classname="GameTest" time="0.0"/>
+  <testcase name="GameTest_shouldCheckPlayTypePlayerTwo" classname="GameTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
