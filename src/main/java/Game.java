@@ -2,6 +2,16 @@ import java.util.Map;
 import java.util.HashMap;
 
 public class Game {
+
+  public static String runGame(String playerOneInput, String playerTwoInput) { String result = "";
+    if(checkIfWinnerOrTie(playerOneInput, playerTwoInput)) {
+      result = parseWinner(playerOneInput, playerTwoInput);
+    } else if (!checkIfWinnerOrTie(playerOneInput, playerTwoInput)) {
+      result = "this round is a tie";
+    }
+
+    return result;
+  }
   public static String parseWinner(String playerOneInput, String playerTwoInput) {
 
     HashMap<String, String> playType = new HashMap<String, String>();

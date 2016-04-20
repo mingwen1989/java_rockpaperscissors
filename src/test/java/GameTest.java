@@ -22,4 +22,18 @@ public class GameTest {
     String expected = testGame.parseWinner("scissors", "rock");
     assertEquals(expected, "Player Two Wins");
   }
+
+  @Test
+  public void GameTest_shouldRunGameRoundsForTwoPlayers_String() {
+    Game testGame = new Game();
+    String expected = testGame.runGame("paper", "rock");
+    assertEquals(expected, "Player One Wins");
+  }
+
+  @Test
+  public void GameTest_shouldRunGameRoundsForTwoPlayers_CheckForTie_String() {
+    Game testGame = new Game();
+    String expected = testGame.runGame("paper", "paper");
+    assertEquals(expected, "this round is a tie");
+  }
 }
