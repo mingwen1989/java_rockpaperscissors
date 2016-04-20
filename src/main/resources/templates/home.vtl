@@ -1,0 +1,30 @@
+<h1>Let's Play Rock, Paper, Scissors</h1>
+<div id="rps-form">
+<form id="twop-form" action='/results' method='get'>
+  <div class="form-group">
+  <select name="Player1" class="selectpicker">
+    <option name="rock">rock</option>
+    <option name="paper">paper</option>
+    <option name="scissors">scissors</option>
+  </select>
+  <select name="Player2" class="selectpicker">
+    <option name="rock">rock</option>
+    <option name="paper">paper</option>
+    <option name="scissors">scissors</option>
+  </select>
+  </div>
+  <button type="submit" class="btn">Go!</button>
+</form>
+
+
+<form id="cpu-form" action='/results' method='get'>
+  <div class="form-group">
+  <select name="HumanPlayer" class="selectpicker">
+    <option name="rock">rock</option>
+    <option name="paper">paper</option>
+    <option name="scissors">scissors</option>
+  </select>
+  </div>
+  <button type="submit" class="btn">Play Computer!</button>
+</form>
+</div>
